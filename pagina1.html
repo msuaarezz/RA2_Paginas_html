@@ -8,11 +8,11 @@
     <link rel="icon" href="Shrek.webp" type="image/x-icon">
 </head>
 
-<body>
+<body style="background-color: #222; color: #CCC; font-family: Arial; font-size: 30px; padding: 30px; ">
     <header>
         <h1>Inteligéncia Artificial</h1>
         <h2>MENÚ</h2>
-        <ul>
+        <ul style="list-style-type: none;">
             <li>ChatGPT</li>
             <li>Google Gemini</li>
             <li>Microsoft Copilot</li>
@@ -29,7 +29,7 @@
                     lenguaje natural, responder preguntas, ayudar a estudiar, redactar textos, programar y resolver
                     problemas en
                     distintos temas.</p>
-                    <img src="img/Chatgpt.webp" title="ChatGPT" alt="Logo ChatGPT" height="100px"width="100px">
+                <img src="img/Chatgpt.webp" title="ChatGPT" alt="Logo ChatGPT" height="100px" width="100px">
             </article>
             <article>
                 <a href="https://gemini.google.com/" target="_blank"> <br>
@@ -37,8 +37,8 @@
                 </a>
                 <p style="font-size: 20px;">Es la inteligencia artificial de Google diseñada para ayudar con búsquedas,
                     redacción, análisis de información y tareas creativas, integrada con servicios de Google.</p>
-            <img src="img/Gemini.webp" title="Gemini" alt="Logo Gemini" height="100px"width="200px">
-                </article>
+                <img src="img/Gemini.webp" title="Gemini" alt="Logo Gemini" height="100px" width="200px">
+            </article>
             <article>
                 <a href="https://copilot.microsoft.com/" target="_blank"> <br>
                     <h2>Microsoft Copilot</h2>
@@ -47,11 +47,36 @@
                     textos,
                     responder preguntas, programar y trabajar con herramientas como Word, Excel y otras aplicaciones de
                     Microsoft.</p>
-                    <img src="img/Copilot.webp" title="Copilot" alt="Logo Copilot" height="100px"width="200px">
+                <img src="img/Copilot.webp" title="Copilot" alt="Logo Copilot" height="100px" width="200px">
         </section>
         </article>
+
+        <section>
+            <h1>Deja tu Valoración</h1>
+            <form action="submit" method="POST">
+                <label for="username">Nombre:</label>
+                <input type="text" name="username" placeholder="Nombre" style="padding: 8px;"> <br> <br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" placeholder="ejemplo@gmail.com" style="padding: 8px;"> <br> <br>
+                <label for="IA">¿Qué IA quieres valorar?</label>
+                <select name="IA">
+                    <option value="ChatGPT" >ChatGPT</option>
+                    <option value="Google Gemini">Google Gemini</option>
+                    <option value="Microsoft Copilot">Microsoft Copilot</option>
+                </select> <br> <br> <br>
+                <label for="Valoracion">¿Cómo valoras esta IA?</label> <br> <br>
+                <input type="radio" name="opcion" value="Excelente"> Excelente
+                <input type="radio" name="opcion" value="Bueno"> Bueno
+                <input type="radio" name="opcion" value="Mejorable"> Mejorable
+                <br> <br>
+                <label for="Valoracion">Comentario:</label> <br> <br>
+                <textarea name="mensaje" rows="4" cols="40" placeholder="Escribe aqui que quieres comentar..."></textarea> <br> <br>
+                <input type="checkbox" name="novedades" value="novedades"> Quiero recibir novedades sobre IA <br> <br>
+                <input type="button" value="Enviar" style="padding: 8px;">
+            </form>
+        </section>
     </main>
-    
+
     <footer></footer>
 </body>
 
