@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="Página informativa del festival de música Tomorrowland 2026">
+    <title>Tomorrowland 2026</title>
+</head>
+
+<body
+    style="background-color: #3b3636; color: #ffffff; font-family: 'Times New Roman', Times, serif; font-size: 20px; padding: 20px;">
+
+    <header>
+        <h1 style="color: rgb(180, 180, 236); font-family: fantasy;">Tomorrowland 2026</h1>
+        <h2 style="color: rgb(180, 180, 236); font-family: fantasy;">MENÚ</h2>
+        <ul style="list-style-type: none;">
+            <li style="font-size: 18px;"><a href="#cartel" style="color: aqua;">Cartel</a></li>
+            <li style="font-size: 18px;"><a href="#horarios" style="color: aqua;">Horarios</a></li>
+            <li style="font-size: 18px;"><a href="#inscripcion" style="color: aqua;">Inscripción</a></li>
+            <li style="font-size: 18px;"><a href="#contacto" style="color: aqua;">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <br> <br>
+        <section id="cartel">
+            <h2 style="color: rgb(180, 180, 236); font-family: fantasy;">El Cartel</h2>
+            <dl>
+                <dt style="font-size: 18px;">Martin Garrix</dt>
+                <dd style="font-size: 15px; font-family: 'Times New Roman', Times, serif;">DJ holandés reconocido
+                    mundialmente por su música electrónica.
+                    <br> <br>
+                    <img src="imagenes/Martin-Garrix.webp" alt="Martin Garrix" width="300px" height="200px">
+                </dd>
+                <br> <br>
+                <dt style="font-size: 18px;">David Guetta</dt>
+                <dd style="font-size: 15px; font-family: 'Times New Roman', Times, serif;">Productor francés famoso por
+                    sus colaboraciones con grandes estrellas del pop.
+                    <br> <br>
+                    <img src="imagenes/David-Guetta.webp" alt="David Guetta" width="300px" height="200px">
+                </dd>
+                <br> <br>
+                <dt style="font-size: 18px;">Armin van Buuren</dt>
+                <dd style="font-size: 15px; font-family: 'Times New Roman', Times, serif;">DJ y productor de música
+                    trance con numerosos éxitos en las pistas de baile.
+                    <br> <br>
+                    <img src="imagenes/Armin.webp" alt="Armin van Buuren" width="300px" height="200px">
+                </dd>
+            </dl>
+        </section>
+        <br> <br>
+        <section id="horarios">
+            <h2 style="color: rgb(180, 180, 236); font-family: fantasy;">Horarios</h2>
+            <table border="1"
+                style="border-color: rgb(0, 0, 0); width: 100%; text-align: center; font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <tr>
+                    <th>Hora</th>
+                    <th>Escenario Principal</th>
+                    <th>Escenario Secundario</th>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td>Opening Show</td>
+                    <td rowspan="2">DJ Set: Artistas Locales</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 14:00</td>
+                    <td>Martin Garrix</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 16:00</td>
+                    <td colspan="2">Descanso y comidas</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td>David Guetta</td>
+                    <td>Taller DJ</td>
+                </tr>
+                <tr>
+                    <td>17:00 - 18:00</td>
+                    <td>Armin van Buuren</td>
+                    <td>Concierto en vivo</td>
+                </tr>
+            </table>
+        </section>
+        <br> <br>
+        <section id="inscripcion">
+            <h2 style="color: rgb(180, 180, 236); font-family: fantasy;">Inscripción</h2>
+            <form action="hola.php" method="post" target="_blank"
+                style="font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" style="width: 300px; margin-bottom: 10px;">
+                <br>
+                <label for="correo">Correo electrónico:</label>
+                <br>
+                <input type="email" id="correo" name="correo" style="width: 300px; margin-bottom: 10px;">
+                <br>
+                <label for="entrada">Tipo de entrada:</label>
+                <br>
+                <select id="entrada" name="entrada" style="width: 310px; margin-bottom: 10px;">
+                    <option value="general">General</option>
+                    <option value="vip">VIP</option>
+                    <option value="backstage">Backstage</option>
+                </select>
+                <br>
+                <input type="submit" value="Enviar"
+                    style="background-color: rgb(255, 255, 255); color: #000; font-weight: bold; padding: 5px 15px; border: none; cursor: pointer;">
+            </form>
+        </section>
+
+    </main>
+    <br> <br>
+    <footer id="contacto" style="font-family: fantasy; margin-top: 20px;">
+        <h2 style="color: rgb(180, 180, 236);">Contacto</h2>
+        <p style="font-size: 15px; font-family: 'Times New Roman', Times, serif;">Para más información, puedes enviarnos
+            un correo a: <a href="info@tomorrowland.com"
+                style="color: aqua; font-family: 'Times New Roman', Times, serif;">info@tomorrowland.com</a></p>
+    </footer>
+
+</body>
+
+</html>
