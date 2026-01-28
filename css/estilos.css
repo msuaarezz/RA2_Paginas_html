@@ -1,0 +1,60 @@
+body {
+    background-color: #222;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    padding: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+#introduccion p:first-letter {
+    font-size: 50px;
+}
+
+input {
+    padding: 8px;
+}
+
+h2 {
+    color: #11d8d8;
+    font-size: 30px;
+}
+
+header ul li a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: yellow;
+}
+
+.fuente {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.fuente:hover {
+    color: orange;
+    text-decoration: overline;
+}
+
+.fuente:visited {
+    color: rgb(255, 6, 180);
+}
+
+h1 {
+    color: #11d8d8;
+}
+
+a {
+    color: #11d8d8;
+    text-decoration: none;
+}

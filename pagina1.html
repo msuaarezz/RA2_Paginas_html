@@ -4,63 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="descripcion" content="Revolucion de la Inteligencia Artificial">
-    <title>Inteligéncia Artificial</title>
+    <title>Tu Nombre y Apellidos</title>
     <link rel="icon" href="Shrek.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body style="background-color: #222; color: #CCC; font-family: Arial; font-size: 30px; padding: 30px; ">
+<body>
     <header>
         <h1>Inteligéncia Artificial</h1>
         <h2>MENÚ</h2>
-        <ul style="list-style-type: none;">
-            <li>ChatGPT</li>
-            <li>Google Gemini</li>
-            <li>Microsoft Copilot</li>
+        <ul>
+            <li><a href="#chatgpt">ChatGPT</a></li>
+            <li><a href="#gemini">Google Gemini</a></li>
+            <li><a href="#copilot">Microsoft Copilot</a></li>
         </ul>
+        <br> <br>
     </header>
+
     <main>
+        <section id="introduccion">
+            <h1> ¿Qué es la inteligencia artificial y como cambiará nuestro futuro?</h1>
+            <p> La inteligencia artificial (también conocida como IA) ya no es ciencia ficción, es parte de nuestro día
+                a día y va a tener un papel muy significativo en el futuro de la tecnología mundial.
+
+                El significado del término inteligencia artificial ha estado motivo de debate durante muchos años y han
+                aparecido muchas definiciones al respecto. Pero, aún no existe una definición exacta y aceptada, ya que
+                se trata de un término muy genérico en el mundo de la informática. Podríamos decir que se trata de
+                cualquier técnica que permita a los ordenadores dar sentido a los datos de la misma manera que lo hacen
+                los humanos. No pretenden sustituir ni reproducir el funcionamiento del cerebro humano, sino el que
+                busca ampliar sus capacidades. Lo que se busca con la IA es seleccionar los puntos fuertes de los
+                humanos, junto a la capacidad informática de las máquinas, conseguir soluciones colaborativas y obtener
+                finalmente una interacción más natural entre humano y máquina.</p>
+            <a href="https://www.actiumdigital.es/es/blog/que-es-inteligencia-artificial-como-cambiara-futuro" target="_blank" class="fuente">Fuente</a>
+        </section>
+        <br> <br>
         <section>
-            <article>
-                <a href="https://chat.openai.com/" target="_blank"> <br>
-                    <h2>ChatGPT</h2>
-                </a>
-                <p style="font-size: 20px;">Es una inteligencia artificial desarrollada por OpenAI que puede conversar
-                    en
-                    lenguaje natural, responder preguntas, ayudar a estudiar, redactar textos, programar y resolver
-                    problemas en
-                    distintos temas.</p>
+            <article id="chatgpt">
+                <h2><a href="https://chat.openai.com/" target="_blank"> ChatGPT </a></h2>
+                <p>Es una inteligencia artificial desarrollada por OpenAI que puede conversar en lenguaje natural,
+                    responder preguntas, ayudar a estudiar, redactar textos, programar y resolver problemas en distintos
+                    temas.</p>
                 <img src="img/Chatgpt.webp" title="ChatGPT" alt="Logo ChatGPT" height="100px" width="100px">
             </article>
-            <article>
-                <a href="https://gemini.google.com/" target="_blank"> <br>
-                    <h2>Google Gemini</h2>
-                </a>
-                <p style="font-size: 20px;">Es la inteligencia artificial de Google diseñada para ayudar con búsquedas,
-                    redacción, análisis de información y tareas creativas, integrada con servicios de Google.</p>
+            <br> <br>
+            <article id="gemini">
+                <h2><a href="https://gemini.google.com/" target="_blank"> Google Gemini </a></h2>
+                <p>Es la inteligencia artificial de Google diseñada para ayudar con búsquedas, redacción, análisis de
+                    información y tareas creativas, integrada con servicios de Google.</p>
                 <img src="img/Gemini.webp" title="Gemini" alt="Logo Gemini" height="100px" width="200px">
             </article>
-            <article>
-                <a href="https://copilot.microsoft.com/" target="_blank"> <br>
-                    <h2>Microsoft Copilot</h2>
-                </a>
-                <p style="font-size: 20px;">Es una IA de Microsoft que asiste a los usuarios en tareas como escribir
-                    textos,
-                    responder preguntas, programar y trabajar con herramientas como Word, Excel y otras aplicaciones de
-                    Microsoft.</p>
+            <br> <br>
+            <article id="copilot">
+                <h2><a href="https://copilot.microsoft.com/" target="_blank"> Microsoft Copilot </a></h2>
+                <p>Es una IA de Microsoft que asiste a los usuarios en tareas como escribir textos, responder preguntas,
+                    programar y trabajar con herramientas como Word, Excel y otras aplicaciones de Microsoft.</p>
                 <img src="img/Copilot.webp" title="Copilot" alt="Logo Copilot" height="100px" width="200px">
+            </article>
         </section>
-        </article>
 
         <section>
             <h1>Deja tu Valoración</h1>
             <form action="submit" method="POST">
                 <label for="username">Nombre:</label>
-                <input type="text" name="username" placeholder="Nombre" style="padding: 8px;"> <br> <br>
+                <input type="text" name="username" placeholder="Nombre"> <br> <br>
                 <label for="email">Correo electrónico:</label>
-                <input type="email" name="email" placeholder="ejemplo@gmail.com" style="padding: 8px;"> <br> <br>
+                <input type="email" name="email" placeholder="ejemplo@gmail.com"> <br> <br>
                 <label for="IA">¿Qué IA quieres valorar?</label>
                 <select name="IA">
-                    <option value="ChatGPT" >ChatGPT</option>
+                    <option value="ChatGPT">ChatGPT</option>
                     <option value="Google Gemini">Google Gemini</option>
                     <option value="Microsoft Copilot">Microsoft Copilot</option>
                 </select> <br> <br> <br>
@@ -70,9 +81,11 @@
                 <input type="radio" name="opcion" value="Mejorable"> Mejorable
                 <br> <br>
                 <label for="Valoracion">Comentario:</label> <br> <br>
-                <textarea name="mensaje" rows="4" cols="40" placeholder="Escribe aqui que quieres comentar..."></textarea> <br> <br>
-                <input type="checkbox" name="novedades" value="novedades"> Quiero recibir novedades sobre IA <br> <br>
-                <input type="button" value="Enviar" style="padding: 8px;">
+                <textarea name="mensaje" rows="4" cols="40"
+                    placeholder="Escribe aqui que quieres comentar..."></textarea> <br> <br>
+                <input type="checkbox" name="novedades" value="novedades"> Quiero recibir novedades sobre IA <br>
+                <br>
+                <input type="button" value="Enviar">
             </form>
         </section>
     </main>
