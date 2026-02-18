@@ -141,3 +141,43 @@ option {
         font-size: 32px;
     }
 }
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.orden {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.articulo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#chatgpt,
+#copilot,
+#gemini {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#chatgpt p:first-letter,
+#copilot p:first-letter,
+#gemini p:first-letter {
+    font-size: 40px;
+
+}
+#chatgpt:hover,
+#copilot:hover,
+#gemini:hover {
+    transform:scale(1.2);
+    transition:transform 2s ease;
+}
