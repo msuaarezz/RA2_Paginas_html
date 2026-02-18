@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="descripcion" content="Revolucion de la Inteligencia Artificial">
     <title>Tu Nombre y Apellidos</title>
@@ -11,19 +12,20 @@
 
 <body>
     <header>
-        <h1>Inteligéncia Artificial</h1>
-        <h2>MENÚ</h2>
         <ul>
             <li><a href="#chatgpt">ChatGPT</a></li>
             <li><a href="#gemini">Google Gemini</a></li>
             <li><a href="#copilot">Microsoft Copilot</a></li>
+            <li><a href="#valoracion">Valoración</a></li>
         </ul>
-        <br> <br>
+        <br>
+        <h1>Inteligéncia Artificial</h1>
+        <br>
     </header>
 
     <main>
         <section id="introduccion">
-            <h1> ¿Qué es la inteligencia artificial y como cambiará nuestro futuro?</h1>
+            <h2> ¿Qué es la inteligencia artificial y como cambiará nuestro futuro?</h2>
             <p> La inteligencia artificial (también conocida como IA) ya no es ciencia ficción, es parte de nuestro día
                 a día y va a tener un papel muy significativo en el futuro de la tecnología mundial.
 
@@ -35,7 +37,8 @@
                 busca ampliar sus capacidades. Lo que se busca con la IA es seleccionar los puntos fuertes de los
                 humanos, junto a la capacidad informática de las máquinas, conseguir soluciones colaborativas y obtener
                 finalmente una interacción más natural entre humano y máquina.</p>
-            <a href="https://www.actiumdigital.es/es/blog/que-es-inteligencia-artificial-como-cambiara-futuro" target="_blank" class="fuente">Fuente</a>
+            <a href="https://www.actiumdigital.es/es/blog/que-es-inteligencia-artificial-como-cambiara-futuro"
+                target="_blank" class="fuente">Fuente</a>
         </section>
         <br> <br>
         <section>
@@ -61,8 +64,8 @@
                 <img src="img/Copilot.webp" title="Copilot" alt="Logo Copilot" height="100px" width="200px">
             </article>
         </section>
-
-        <section>
+        <br><br>
+        <section id="valoracion">
             <h1>Deja tu Valoración</h1>
             <form action="submit" method="POST">
                 <label for="username">Nombre:</label>
@@ -76,14 +79,15 @@
                     <option value="Microsoft Copilot">Microsoft Copilot</option>
                 </select> <br> <br> <br>
                 <label for="Valoracion">¿Cómo valoras esta IA?</label> <br> <br>
-                <input type="radio" name="opcion" value="Excelente"> Excelente
-                <input type="radio" name="opcion" value="Bueno"> Bueno
-                <input type="radio" name="opcion" value="Mejorable"> Mejorable
+                <input type="radio" name="opcion" value="Excelente"> <span>Excelente</span>
+                <input type="radio" name="opcion" value="Bueno"> <span>Bueno</span>
+                <input type="radio" name="opcion" value="Mejorable"> <span>Mejorable</span>
                 <br> <br>
                 <label for="Valoracion">Comentario:</label> <br> <br>
                 <textarea name="mensaje" rows="4" cols="40"
                     placeholder="Escribe aqui que quieres comentar..."></textarea> <br> <br>
-                <input type="checkbox" name="novedades" value="novedades"> Quiero recibir novedades sobre IA <br>
+                <input type="checkbox" name="novedades" value="novedades"> <span>Quiero recibir novedades sobre IA
+                </span><br>
                 <br>
                 <input type="button" value="Enviar">
             </form>

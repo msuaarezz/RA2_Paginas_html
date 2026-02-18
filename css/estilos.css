@@ -1,7 +1,13 @@
+:root {
+    --color-titulo: #11d8d8;
+    --color-fondo: #222;
+    --font-base: Arial, sans-serif;
+}
+
 body {
-    background-color: #222;
+    background-color: var(--color-fondo);
     color: #ffffff;
-    font-family: Arial;
+    font-family: var(--font-base);
     font-size: 30px;
     padding: 30px;
 }
@@ -12,6 +18,7 @@ ul {
 
 p {
     font-size: 20px;
+    text-align: justify;
 }
 
 #introduccion p:first-letter {
@@ -20,20 +27,32 @@ p {
 
 input {
     padding: 8px;
+    font-size: 15px;
 }
 
 h2 {
-    color: #11d8d8;
-    font-size: 30px;
+    color: var(--color-titulo);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: -25px;
 }
 
 header ul li a {
-    color: rgb(255, 0, 0);
-    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 header ul li a:hover {
-    color: yellow;
+    color: rgb(255, 0, 0);
 }
 
 .fuente {
@@ -51,10 +70,74 @@ header ul li a:hover {
 }
 
 h1 {
-    color: #11d8d8;
+    color: var(--color-titulo);
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 a {
-    color: #11d8d8;
+    color: var(--color-titulo);
     text-decoration: none;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
+}
+
+select {
+    font-size: 20px;
+}
+
+option {
+    font-size: 20px;
+}
+
+@media(width<600px) {
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media(width>=600px) {
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+@media(width>1280px) {
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
 }
